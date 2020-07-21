@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.rameshit.employee.vo.EmployeeVO" table="TB_EMPLOYEE">
+		<id name="empId" column="ID" type="string">
+			<generator class="assigned">
+			</generator>
+		</id>
+		<property name="name" column="NAME" type="string"></property>
+		<property name="age" column="AGE" type="string"></property>
+		<property name="salary" column="SALARY" type="string"></property>
+		<property name="address" column="ADDRESS" type="string"></property>
+	</class>
+</hibernate-mapping>

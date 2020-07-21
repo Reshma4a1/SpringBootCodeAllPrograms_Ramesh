@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<bean id="addr" class="com.rameshit.autowire.Address">
+		<property name="houseNo" value="9-9-9"></property>
+		<property name="city" value="Ananapur"></property>
+		<property name="state" value="AP"></property>
+		<property name="pincode" value="515001"></property>
+	</bean>
+
+	<bean id="employee" class="com.rameshit.autowire.Employee" autowire="byType">
+		<property name="eid" value="100"></property>
+		<property name="ename" value="Ramesh"></property>
+	</bean>
+
+</beans>
+

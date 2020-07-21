@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean id="student" class="com.rameshit.collection.Student">
+		<property name="id" value="9999"></property>
+		<property name="name" value="Ramesh"></property>
+		<property name="courses">
+			<list>
+				<value>Core Java</value>
+				<value>Adv Java</value>
+				<value>Spring Java</value>
+				<value>HB</value>
+				<value>UI Tech</value>
+			</list>
+		</property>
+
+		<property name="mobileNos">
+			<set>
+				<value>999999999</value>
+				<value>665656776</value>
+				<value>111111111</value>
+			</set>
+		</property>
+
+		<property name="feeDetails">
+			<map>
+				<entry key="CoreJava" value="10000"></entry>
+				<entry key="Adv java" value="10000"></entry>
+				<entry key="Spring" value="12000"></entry>
+				<entry key="HB" value="10000"></entry>
+				<entry key="UI" value="20000"></entry>
+			</map>
+		</property>
+		
+		<property name="properties">
+			<props>
+				<prop key="key1">value1</prop>
+				<prop key="key2">value2</prop>
+				<prop key="key3">value3</prop>
+			</props>
+		</property>
+
+	</bean>
+</beans>
+

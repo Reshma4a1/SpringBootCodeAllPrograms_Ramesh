@@ -1,0 +1,5 @@
+<com.rameshit.model.Employee>
+	<id>101</id>
+	<name>Kazi</name>
+	<salary>100000.0</salary>
+</com.rameshit.model.Employee>
